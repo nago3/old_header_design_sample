@@ -1,0 +1,203 @@
+/* タブレット用 */
+@media(min-width: 481px){
+
+}
+
+
+
+/* PC用 */
+@media(min-width: 769px){
+
+    /* ヘッダー */
+    .header_container{
+        justify-content: center;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .site_logo{
+        height: 70px;
+    }
+    .search{
+        display: none;
+    }
+    .pc_nav{
+        width: 100%;
+        display: block;
+    }
+    .pc_nav_container{
+        /* width: 70%; */
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+    .pc_nav_lists{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .pc_nav_list{
+        /* display: inline-block; */
+        opacity: 0.8;
+        border-radius: 2px;
+    }
+    .pc_nav_list:hover > .pc_nav_btn{
+        opacity: 1;
+        text-decoration: underline;
+    }
+    .pc_nav_btn{
+        height: 60px;
+        line-height: 60px;
+        padding: 0 30px;
+        display: inline-block;
+    }
+    
+
+    /* nav第二階層 */
+    .pc_nav_list:hover > .pc_nav_level2{
+        display: flex;
+    }
+    .pc_nav_level2{
+        display: none;
+        justify-content: center;
+    }
+    .pc_nav_level2_lists{
+        /* display: none; */
+        top:100%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.95);
+        font-weight: bold;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    }
+
+    .pc_nav_level2_lists > li:hover, .pc_nav_level2_SorM:hover{
+        background-color:#ddd;
+        opacity: 1;
+        border-radius: 5px;
+    }
+
+    .pc_nav_level2_lists a{
+        height:50px;
+        width:130px;
+        line-height: 50px;
+        padding:0 30px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    
+
+    /* nav第三階層 */
+    .pc_nav_level2_SorM:hover > .pc_nav_level3_m, .pc_nav_level2_SorM:hover > .pc_nav_level3_s{
+        display: flex;
+    }
+    .pc_nav_level3_m, .pc_nav_level3_s{
+        display: none;
+        justify-content: center;
+        position: absolute;
+        left: -30%;
+    }
+    .pc_nav_level3_m_lists, .pc_nav_level3_s_lists{
+        top:100%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.95);
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    }
+    .pc_nav_level3_m_parts{
+        display: flex;
+        flex-direction: column;
+        border-right:1px solid #ddd;
+        margin-right: -1px;
+    }
+    .pc_nav_level3_m_FEL{
+        font-size: 13px;
+        font-weight: bold;
+        height:40px;
+        line-height: 40px;
+        color:#323A45;
+        border-bottom: 1px solid #ddd;
+    }
+    .pc_nav_level3_s_wrap, .pc_nav_level3_m_FEL_wrap{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+    .pc_nav_level3_s_row{
+        border-right: 1px solid #ddd;
+        margin-right: -1px;
+        padding: 15px;
+    }
+
+
+    .pc_nav_level3_m_FEL_items{
+        padding-top: 15px;
+    }
+
+    .pc_nav_level3_m_FEL_item{
+        padding: 0 0 15px 30px;
+    }
+
+    .pc_nav_level3_s_item a{
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        width: 110px;
+        font-size: 12px;
+        font-weight: normal;
+        padding:0;
+        text-align: left;
+    }
+    
+    .pc_nav_level3_m_FEL_item a{
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        width: 150px;
+        font-size: 12px;
+        font-weight: normal;
+        padding-left: 6px;
+        text-align: left;
+    }
+
+    .pc_nav_level3_m_FEL_item > a, .pc_nav_level3_s_item > a{
+        font-weight: bold !important;
+        padding-left: 0 !important;
+        font-size: 13px;
+    }
+
+    .pc_long{
+        font-size: 12px !important;
+    }
+
+    
+    .pc_nav_level3_s_item a:hover, .pc_nav_level3_m_FEL_item a:hover{
+        text-decoration: underline;
+    }
+
+
+    /* 検索アイコン */
+    .pc_search{
+        position: absolute;
+        right: 20%;
+        top: 3px;
+        display: inline-block;
+    }
+    .pc_search a{
+        display: block;
+        height: 60px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .pc_search_icon{
+        height: 15px;
+    }
+   
+    
+}
